@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<p>
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+           oninput="doido(this.value)"
+           onchange="doido(this.value)">
+</p>
+</form>
+<p>Celsius: <span id="hienthi"></span></p>
+      <script>
+          function doido(x) {
+              x= parseFloat(x);
+              document.getElementById("hienthi").innerHTML= (x - 32) /1.8;
+          }
+      </script>
+</body>
+</html>
